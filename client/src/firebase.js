@@ -7,8 +7,7 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY
-  ,
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "geneforms-dee30.firebaseapp.com",
   projectId: "geneforms-dee30",
   storageBucket: "geneforms-dee30.firebasestorage.app",
@@ -18,3 +17,6 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
+// Export the Firebase app instance
+export { app };
